@@ -142,16 +142,11 @@ main h2 {
     margin: 5px 0 10px 0;
 }
 
-/* Updated to use CSS Grid for a second time, satisfying the audit requirement */
 .resource-list {
     margin: 0;
     list-style-type: none;
-    /* Remove default bullets */
     padding: 0;
-    /* Remove default padding for grid */
-
     display: grid;
-    /* Create a responsive grid with a minimum item width of 150px */
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
 }
@@ -172,4 +167,33 @@ footer {
     background-color: var(--primary-blue);
     color: var(--white);
     text-align: center;
-    padding
+    padding: 10px 0;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+footer p {
+    margin: 0;
+}
+
+.heart-icon {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    main h2 {
+        margin-top: 0;
+    }
+
+    .card-content-grid {
+        flex-direction: column;
+    }
+
+    .profile-image-container {
+        text-align: center;
+    }
+}
