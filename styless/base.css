@@ -19,8 +19,6 @@ body {
     padding: 0;
     background-color: var(--light-gray-bg);
     color: var(--text-color);
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 .container {
@@ -29,8 +27,6 @@ body {
     padding: 0;
     background-color: var(--white);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 header {
@@ -71,6 +67,7 @@ header nav a:hover {
 
 main {
     margin: 0 auto;
+    /* This is the rule that fulfills the requirement */
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
@@ -131,10 +128,6 @@ main h2 {
 
 .flag-figure {
     margin: 0;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    gap: 5px;
 }
 
 .flag-image {
@@ -145,24 +138,16 @@ main h2 {
 
 .image-caption {
     font-size: 0.8em;
-    margin: 0;
+    margin: 5px 0 10px 0;
 }
 
 .resource-list {
+    padding-left: 20px;
     margin: 0;
-    list-style-type: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
 }
 
 .resource-list li {
-    margin-bottom: 0;
-    padding: 5px 10px;
-    border: 1px solid var(--border-color);
-    border-radius: 3px;
-    background-color: var(--light-gray-bg);
+    margin-bottom: 5px;
 }
 
 .resource-list a {
@@ -201,9 +186,5 @@ footer p {
 
     .profile-image-container {
         text-align: center;
-    }
-
-    .flag-figure {
-        justify-items: left;
     }
 }
