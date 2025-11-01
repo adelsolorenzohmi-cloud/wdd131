@@ -131,16 +131,19 @@ main h2 {
     font-weight: 700;
 }
 
+.flag-figure {
+    margin: 0;
+}
+
 .flag-image {
     width: 100px;
     height: auto;
-    margin-bottom: 5px;
     border: 1px solid var(--border-color);
 }
 
 .image-caption {
     font-size: 0.8em;
-    margin: 0 0 10px 0;
+    margin: 5px 0 10px 0;
 }
 
 .resource-list {
