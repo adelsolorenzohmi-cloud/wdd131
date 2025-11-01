@@ -1,0 +1,186 @@
+:root {
+    --primary-blue: #02233f;
+    --secondary-blue: #235487;
+    --white: #ffffff;
+    --light-gray-bg: #f4f4f4;
+    --text-color: #333333;
+    --border-color: #cccccc;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray-bg);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--white);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+.course-header {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+header nav {
+    background-color: var(--secondary-blue);
+    padding: 10px 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 1.1em;
+    font-weight: 700;
+    flex-grow: 1;
+    text-align: center;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* CORRECTED: Removed conflicting max-width and fixed margin for alignment */
+main {
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    background-color: transparent;
+    padding: 20px;
+}
+
+main h1 {
+    display: none;
+}
+
+.card {
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--white);
+    flex-grow: 1;
+}
+
+.about-me-section {
+    flex: 2;
+}
+
+.web-dev-resources-section {
+    flex: 1;
+}
+
+.section-title {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 8px;
+    margin: -15px -15px 15px -15px;
+    font-size: 1.2em;
+}
+
+.card-content-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.bio-text {
+    flex: 1;
+}
+
+.profile-image-container {
+    padding-top: 10px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: auto;
+    border: 1px solid var(--border-color);
+}
+
+.country-info h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.flag-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+    border: 1px solid var(--border-color);
+}
+
+.image-caption {
+    font-size: 0.8em;
+    margin: 0 0 10px 0;
+}
+
+.resource-list {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.resource-list li {
+    margin-bottom: 5px;
+}
+
+.resource-list a {
+    color: var(--secondary-blue);
+}
+
+footer {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+footer p {
+    margin: 0;
+}
+
+.heart-icon {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .card-content-grid {
+        flex-direction: column;
+    }
+
+    .profile-image-container {
+        text-align: center;
+    }
+}
