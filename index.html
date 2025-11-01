@@ -1,14 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Adelso Tzep Chox</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals: A page for Adelso Tzep Chox summarizing web development goals, resources, and a personal bio.">
+    <meta name="author" content="Adelso Tzep Chox">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <h1 class="course-header">
+            <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span> - Adelso Tzep Chox
+        </h1>
 
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+            <a href="final-project/index.html">Final Project</a>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <h1>Adelso Tzep Chox</h1>
+
+            <section class="card about-me-section">
+                <h2 class="section-title">About Me</h2>
+                <div class="card-content-grid">
+                    <div class="bio-text">
+                        <p>Hello! I'm Adelso Tzep from Guatemala City. I'm currently working remotely as a Data Entry
+                            Specialist for a company based in the United States. Driven by a passion for technology, I
+                            am also dedicated to my studies in Software Development, aiming to transition my career into
+                            the world of coding and application building. 🚀</p>
+
+                        <h3>Guatemala</h3>
+                        <div class="country-info">
+                            <img src="images/guatemala-flag.png" alt="Official Flag of Guatemala" class="flag-image">
+                            <p class="image-caption">Official Flag of Guatemala</p>
+                            <p>Guatemala is a Central American nation known as the "Land of Eternal Spring." It is
+                                celebrated for its stunning natural landscape, which includes volcanoes and the famous
+                                Lake Atitlán. Guatemala’s rich culture blends Spanish colonial history with vibrant
+                                Mayan traditions. It is globally recognized for its exquisite coffee and contains
+                                significant ancient sites, most notably the colossal Tikal Mayan ruins.</p>
+                        </div>
+                    </div>
+
+                    <div class="profile-image-container">
+                        <img src="images/adelso-tzep.webp" alt="Adelso Tzep Chox" class="profile-pic">
+                    </div>
+                </div>
+            </section>
+
+            <section class="card web-dev-resources-section">
+                <h2 class="section-title">Web Dev Resources</h2>
+                <ul class="resource-list">
+                    <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                    <li><a href="" target="_blank">Image Placeholder</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> Adelso Tzep Chox ❤️ Guatemala City
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
