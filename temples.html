@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Adelso Tzep Chox</title>
+    <meta name="description"
+        content="WDD 131 – Explore a beautiful, responsive Temple Album featuring stunning photographs and captions. View gallery layouts optimized for mobile and desktop screens.">
+    <meta name="author" content="Adelso Tzep Chox">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="logo">Temple Album</h1>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-heading">Home</h1>
+        <section class="gallery">
+            <figure class="album-item">
+                <img src="images/guatemala-city-guatemala-temple.webp" alt="Guatemala City Temple">
+                <figcaption class="caption">Guatemala City Temple</figcaption>
+            </figure>
+            <figure class="album-item">
+                <img src="images/quetzaltenango-guatemala-temple.webp" alt="Quetzaltenango Guatemala Temple">
+                <figcaption class="caption">Quetzaltenango Guatemala Temple</figcaption>
+            </figure>
+            <figure class="album-item">
+                <img src="images/coban-guatemala-temple.webp" alt="Coban Guatemala Temple">
+                <figcaption class="caption">Coban Guatemala Temple</figcaption>
+            </figure>
+            <figure class="album-item">
+                <img src="images/miraflores-temple.webp" alt="Miraflores Guatemala Temple">
+                <figcaption class="caption">Miraflores Guatemala Temple</figcaption>
+            </figure>
+            <figure class="album-item">
+                <img src="images/huehuetenango-guatemala-temple.jpg" alt="Huehuetenango Guatemala Temple">
+                <figcaption class="caption">Huehuetenango Guatemala Temple</figcaption>
+            </figure>
+            <figure class="album-item">
+                <img src="images/retalhuleu-guatemala-temple.webp" alt="Retalhuleu Guatemala Temple">
+                <figcaption class="caption">Retalhuleu Guatemala Temple</figcaption>
+            </figure>
+            <figure class="album-item">
+                <img src="images/sao-paulo-brazil-temple.webp" alt="São Paulo Brazil Temple">
+                <figcaption class="caption">Temple Seven</figcaption>
+            </figure>
+            <figure class="album-item">
+                <img src="images/campinas-brazil-templelds.webp" alt="Campinas Brazil Temple">
+                <figcaption class="caption">Campinas Brazil Temple</figcaption>
+            </figure>
+            <figure class="album-item">
+                <img src="images/salt-lake-temple.webp" alt="Salt Lake City Utah Temple">
+                <figcaption class="caption">Salt lake City Utah Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> Adelso Tzep Chox ❤️ Guatemala City
+        </p>
+        <p id="lastmodified">Last Modified:</p>
+    </footer>
+</body>
+
+</html>
