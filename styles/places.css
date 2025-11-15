@@ -4,7 +4,6 @@
     --color-text-dark: #333333;
     --color-background-light: #F0F0F0;
     --color-background-content: rgba(255, 255, 255, 0.85);
-    /* Opacidad para escritorio */
     --max-width: 1200px;
     --spacing-default: 20px;
     --spacing-small: 10px;
@@ -20,7 +19,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ... Código de cabecera y título ... */
 
 .header-band {
     height: 30px;
@@ -55,7 +53,6 @@ h1 {
     overflow-x: hidden;
 }
 
-/* ... Código de la Imagen de Fondo ... */
 
 .image-area {
     width: 100vw;
@@ -81,7 +78,6 @@ h1 {
     object-fit: cover;
 }
 
-/* ... Código de las Cajas (Data/Weather) ... */
 
 .data-box,
 .weather-box {
@@ -95,7 +91,6 @@ h1 {
     position: absolute;
 }
 
-/* 🚀 POSICIONAMIENTO EXTREMO (ESCRITORIO) 🚀 */
 .data-box {
     left: calc(50% - (var(--max-width) / 2) - 100px);
     top: 30px;
@@ -107,8 +102,6 @@ h1 {
     top: 320px;
     bottom: auto;
 }
-
-/* ---------------------------------------------------- */
 
 
 .data-box h2,
@@ -168,8 +161,6 @@ h1 {
     display: none;
 }
 
-
-/* 📱 AJUSTES PARA VISTA MÓVIL 📱 */
 @media (max-width: 768px) {
 
     .title-bar {
@@ -227,8 +218,6 @@ h1 {
         padding: 2px 0;
         margin-bottom: 10px;
         text-align: center;
-
-        /* 💥 CORRECCIÓN: Permitimos el ajuste de línea para evitar el recorte */
         white-space: normal;
         overflow: visible;
         text-overflow: clip;
@@ -245,8 +234,6 @@ h1 {
         text-align: center;
         background-color: var(--color-primary-blue);
     }
-
-    /* ... Posicionamiento/Orden móvil ... */
 
     .data-box {
         left: auto;
