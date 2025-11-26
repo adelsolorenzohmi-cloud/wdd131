@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .main-nav {
+        display: block !important;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    .main-nav ul {
+        display: flex;
+        gap: 25px;
+    }
+
+    .main-nav ul li a {
+        padding: 0;
+        color: var(--light-text-color);
+    }
+
+    .main-nav ul li a:hover {
+        background: none;
+        color: var(--accent-color);
+        text-decoration: underline;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 0;
+    }
+
+    main {
+        max-width: 1000px;
+    }
+}
