@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submission Confirmed</title>
+    <meta name="description" content="Review Submission Confirmed">
+    <meta name="author"
+        content="Your product review has been successfully submitted! Thank you for your feedback. You may submit another review or return to the main site.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Review Submitted!</h1>
+    </header>
+
+    <main>
+        <div class="confirmation-message">
+            <p>Thank you for submitting your product review.</p>
+            <p>Your data has been successfully processed via the <strong>GET</strong> method.</p>
+            <p>This is Review #<span id="reviewCountDisplay">0</span> completed by your client device.</p>
+            <p><a href="index.html">Submit another review</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span>Adelso Tzep Chox, Guatemala</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        function setFooterInfo() {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = document.lastModified;
+        }
+
+        function updateReviewCounter() {
+            let count = localStorage.getItem('reviewCounter');
+            count = count ? parseInt(count) : 0;
+            count++;
+            localStorage.setItem('reviewCounter', count);
+            document.getElementById('reviewCountDisplay').textContent = count;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateReviewCounter();
+            setFooterInfo();
+        });
+    </script>
+</body>
+
+</html>
