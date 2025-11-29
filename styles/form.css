@@ -172,3 +172,23 @@ footer p {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
+/* --- Responsive Design: Media Queries --- */
+@media screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
