@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine Flow - Daily Routine Tracker</title>
+    <meta name="author" content="Adelso Tzep Chox">
+    <meta name="description"
+        content="Manage your daily habits and tasks efficiently with Routine Flow. Quickly add, track, and complete your workouts, meetings, and personal goals.">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Routine Flow Tracker</h1>
+        <button id="menu-toggle" aria-expanded="false" aria-controls="main-navigation">☰</button>
+
+        <nav id="main-navigation">
+            <a href="index.html">Active Tasks</a>
+            <a href="weekly-goals.html">Weekly Goals</a>
+            <a href="references.html">References</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="add-task-area">
+            <h2>Add New Habit or Activity</h2>
+            <form id="add-task-form">
+                <label for="task-text">Activity Name:</label>
+                <input type="text" id="task-text" placeholder="e.g., Read Scriptures 30 min" required>
+
+                <label for="task-type">Type:</label>
+                <select id="task-type">
+                    <option value="Habit">Habit</option>
+                    <option value="Work">Work</option>
+                    <option value="Meeting">Meeting</option>
+                    <option value="Personal">Personal</option>
+                </select>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section class="task-list-area">
+            <h2>Today's Activities</h2>
+            <div class="filters">
+                <button onclick="updateDOM('all')">All</button>
+                <button onclick="updateDOM('Habit')">Habits</button>
+                <button onclick="updateDOM('Work')">Work</button>
+                <button onclick="updateDOM('Meeting')">Meetings</button>
+                <button onclick="updateDOM('Personal')">Personal</button>
+            </div>
+
+            <ul id="task-list">
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="current-year"></span> Adelso Tzep Chox - Routine Flow |
+            <a href="references.html">References</a>
+        </p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+
+</body>
+
+</html>
